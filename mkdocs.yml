@@ -3,7 +3,7 @@ copyright: "🌱 Projeto AgroMart 2025.2"
 theme:
   name: material
   language: pt-BR
-  logo: assets/logo.png
+  logo: assets/Logo.png
 
   palette:
     # Modo claro
