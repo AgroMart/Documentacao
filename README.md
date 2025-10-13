@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AgroMart/Documentacao_2025.2/main/public/img/logo.png" alt="AgroMart Logo" width="140"/>
+  <img src="https://github.com/AgroMart/Documentacao_2025.2/blob/main/docs/assets/Logo.png" alt="AgroMart Logo" width="140"/>
 </p>
 
 ---
