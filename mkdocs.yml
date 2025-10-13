@@ -1,26 +1,22 @@
-site_name: AgroMart
-copyright: "🌱 Projeto AgroMart 2025.2"
+site_name: Carteira Digital de Trânsito
 theme:
   name: material
   language: pt-BR
-  logo: assets/logo.png
+  logo: assets/icon.png
 
-  palette:
-    # Modo claro
+  palette: 
+
+    # Palette toggle for light mode
     - scheme: default
-      primary: light-green   # <-- cor da barra
-      accent: lime
       toggle:
-        icon: material/brightness-7
-        name: Mudar para modo escuro
+        icon: material/brightness-7 
+        name: Switch to dark mode
 
-    # Modo escuro
+    # Palette toggle for dark mode
     - scheme: slate
-      primary: green         # <-- cor da barra no modo escuro
-      accent: lime
       toggle:
         icon: material/brightness-4
-        name: Mudar para modo claro
+        name: Switch to light mode
   
 markdown_extensions:
   - admonition
@@ -42,21 +38,139 @@ markdown_extensions:
   - pymdownx.extra 
 
 nav:
-  - Conheça o AgroMart: index.md
-  - AgroMart Mobile: 
-    - Conheça o AgroMart Mobile: AgroMart_Mobile/AgroMartMobile.md
-    - Arquitetura Mobile: AgroMart_Mobile/arquitetura.md
-    - Guia de instalação: AgroMart_Mobile/guiaUsuario.md
-    - Planejamento: AgroMart_Mobile/planejamento.md
-    - Padrões de Desenvolvimento: AgroMart_Mobile/padrao.md
-  - AgroMart Web:
-    - Conheça o AgroMart Web: AgroMart_Web/AgroMartWeb.md
-    - Arquitetura Web: AgroMart_Web/arquitetura.md
-    - Guia de instalação: AgroMart_Web/guiaUsuario.md
-    - Planejamento: AgroMart_Web/planejamento.md
-    - Padrões de Desenvolvimento: AgroMart_Web/padrao.md
-  - Guia de contribuição: Contribuicao.md
-  - Processo de desenvolvimento: processo.md
+  - Sobre o projeto: index.md
+  - Atas:
+    - Ata 01: atas/ata 1.md
+    - Ata 02: atas/ata2.md
+    - Ata 03: atas/ata 3.md
+    - Ata 04: atas/ata4.md
+    - Ata 05: atas/ata5.md
+    - Ata 06: atas/ata6.md
+  - Apresentações:
+    - Apresentação 01: apresentação/apresentação 1.md
+    - Apresentação 02: apresentação/apresentacao 2.md
+    - Apresentação 03: apresentação/apresentacao 3.md
+    - Apresentação 04: apresentação/apresentacao 4.md
+    - Apresentação 05: apresentação/apresentacao 5.1.md
+    - Apresentação 06: apresentação/apresentacao 6.md
+    - Apresentação Final: apresentação/Entrega--Final.md
+  - Planejamento:
+    - Ferramentas: planejamento/ferramenta.md
+    - Cronograma: planejamento/cronograma.md
+    - Políticas: planejamento/políticas.md
+    - Aplicativo Selecionado: planejamento/aplicativo
+    - Heatmap: planejamento/Heatmap
+    - Metodologia: planejamento/metodologia
+  - Pré-rastreabilidade:
+    - Rich picture: pré-rastreabilidade/rich picture
+  - Rastreabilidade:
+    - Matriz Geral: pos-rastreabilidade/matriz-geral.md
+    - Pós-Rastreabilidade: pos-rastreabilidade/pos-rastreabilidade.md
+  - Elicitação:
+    - Definição Perfil de Usuário:
+      - Questionário: elicitação/PerfildeUsuario/Questionario.md
+      - Análise de documento: elicitação/PerfildeUsuario/AnaliseDocumento.md
+      - Perfil de Usuário: elicitação/PerfildeUsuario/PerfilUsuario.md
+    - Personas: elicitação/personas
+    - Elicitação de Requisito: 
+      - Storyboard: elicitação/storyboard
+      - Glossário: elicitação/glossario
+      - Entrevista: elicitação/entrevista.md
+      - Introspecção: elicitação/Introspeccao.md
+      - Requisitos Elicitados: elicitação/requisitos_elicitados
+    - Priorização: 
+      - First Things First: elicitação/priorização/first_things_first
+      - Three Level Scale: elicitação/priorização/three_level_scale
+      - $100: elicitação/priorização/100
+  - Modelagem:
+    - Cenários: modelagem/cenarios.md  
+    - Casos de Uso: modelagem/casosDeUso.md
+    - Léxicos: modelagem/léxicos.md
+    - Elicitação Suplementar: modelagem/especificacao-suplementar
+    - Ágil:
+      - NFR Framework: modelagem/agil/framework.md
+      - Product Backlog: modelagem/agil/backlog.md
+      - Histórias de Usuário: modelagem/agil/historiasUsuario.md
 
-extra:
-  generator: false   # remove o "Made with Material for MkDocs"
+
+  - Verificação:
+    - Grupo 2:
+      - Planejamento:
+        - Aplicativo Selecionado: verificacao/grupo2/planejamento/AplicativoSelecionado.md
+        - Ferramentas: 
+          - Inspecao: verificacao/grupo2/ferramentas/inspecao.md
+          - Verificação: verificacao/grupo2/ferramentas/verificacao.md
+        - Heatmap: verificacao/grupo2/planejamento/Heatmap.md
+        - Metodologia: verificacao/grupo2/planejamento/Metodologia.md
+        - Políticas: verificacao/grupo2/planejamento/Politicas.md
+        - Cronograma: verificacao/grupo2/planejamento/cronograma.md
+      - Pre-rastreabilidade:
+        - Rich picture: verificacao/grupo2/Pre-rastreabilidade/RichPicture.md
+      - Elicitação:
+        - Perfil de Usuário: verificacao/grupo2/elicitação/PerfildeUsuário.md
+        - Técnicas:
+          - Introspecção: verificacao/grupo2/elicitação/Introspecção.md
+          - Storyboard: verificacao/grupo2/elicitação/Storyboard.md
+          - Glossário: verificacao/grupo2/elicitação/Glossario.md
+          - Questionário: verificacao/grupo2/elicitação/questionários.md
+        - Priorização de requisitos:
+          - $100: verificacao/grupo2/elicitação/100$.md
+          - First Things First: verificacao/grupo2/elicitação/FirstThingsFirst.md 
+      - Modelagem:
+        - Léxicos: verificacao/grupo2/modelagem/lexicos.md  
+        - Cenários: verificacao/grupo2/modelagem/Cenário.md  
+        - Especificação Suplementar: verificacao/grupo2/modelagem/especificaçãoSuplementar.md  
+        - Histórias de Usuário: verificacao/grupo2/modelagem/HistoriaUsuario.md   
+      - Rastreabilidade:
+        - Matriz de Rastreabilidade: verificacao/grupo2/rastreabilidades/MatrizDeRastreabilidade.md
+
+
+
+
+
+    - Grupo 3:
+      - Planejamento da Verificação: verificacao/grupo3/planejamendoDaVerificacao.md 
+      - Planejamento:
+        - Padronização do projeto: verificacao/grupo3/planejamento/padronizacaoDoProj.md
+        - Rich Picture: verificacao/grupo3/planejamento/richPicure.md
+        - Aplicativo selecionado: verificacao/grupo3/planejamento/AplicativoSelecionado.md 
+        - Cronogramas: verificacao/grupo3/planejamento/cronograma.md
+        - Ferramentas: verificacao/grupo3/planejamento/ferramentasDeUso.md
+        - Heatmap: verificacao/grupo3/planejamento/heatmap.md
+        - Termos de Uso: verificacao/grupo3/planejamento/TermosDeUso.md 
+      - Elicitação:
+        - Personas: verificacao/grupo3/elicitacao/personas.md
+        - Técnicas:
+          - Brainstorming: verificacao/grupo3/elicitacao/tecnicasDeElicitacao/brainstorming.md
+          - Introspecção: verificacao/grupo3/elicitacao/tecnicasDeElicitacao/introspeccao.md
+          - Observação: verificacao/grupo3/elicitacao/tecnicasDeElicitacao/observacao.md
+          - Questionário: verificacao/grupo3/elicitacao/tecnicasDeElicitacao/questionario.md
+        - Priorização de requisitos:
+          - $100: verificacao/grupo3/elicitacao/priorizacao/$100.md
+          - Introdução: verificacao/grupo3/elicitacao/priorizacao/Introducao_Priorizacao.md
+          - Moscow: verificacao/grupo3/elicitacao/priorizacao/moscow.md
+          - Three Level Scale: verificacao/grupo3/elicitacao/priorizacao/ThreeLevelScale.md
+      - Modelagem:
+        - Cenários: verificacao/grupo3/modelagem/cenarios.md
+        - Léxicos:  verificacao/grupo3/modelagem/lexicos.md
+        - Casos de Uso:  verificacao/grupo3/modelagem/casosDeUso.md
+        - Especificação Suplementar: verificacao/grupo3/modelagem/especificacaoSuplementar.md
+      - Modelagem Àgil:
+        - Backlog do produto: verificacao/grupo3/backlog.md
+        - Histórias de Usuário: verificacao/grupo3/verificacao-historias-de-usuario.md
+        - NFR Framework: verificacao/grupo3/modelagem/agil/nfr.md
+  - Validação:
+    - Agendamento de serviço: Validacao/Prototipo_alta_fidelidade/Agendamento.md
+    - Agendamento de Alerta de Vencimento: Validacao/Prototipo_alta_fidelidade/AlertadeVencimento.md
+    - Informações de Trânsito: Validacao/Prototipo_alta_fidelidade/Transito.md
+  - Entrega Final:
+    - Aplicativo Selecionado: entrega-final/AplicativoSelecionado.md
+    - Cronograma planejado e executado: entrega-final/cronograma.md
+    - Execução do Projeto: entrega-final/execucao-do-projeto.md
+    - Resultados Alcançados: entrega-final/resultados-alcan.md
+    - Sintese dos Métodos e Técnicas: entrega-final/sintese-metodo-tecnicas.md
+    - Síntese dos artefatos que foram criados no projeto: entrega-final/artefatos-criados.md
+    - Sintese das Verificações: entrega-final/sintese-verificacoes.md
+    - Sintese das Ferramentas: entrega-final/ferramentas-utilizadas.md
+    - Sintese das Apresentações: entrega-final/sintese-video-apresentações.md
+    - Considerações Finais: entrega-final/consideracao-final.md

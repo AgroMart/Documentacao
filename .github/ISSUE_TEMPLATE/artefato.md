@@ -3,7 +3,7 @@ name: "Documentação"
 about: "Criação de um novo artefato"
 title: Etapa - Artefato
 labels: "documentation"
-assignees: " "
+assignees: ""
 ---
 
 ## Descrição
@@ -25,5 +25,3 @@ O documento criado possui:
 - [ ] Tabelas e imagens com legenda e fonte?
 - [ ] As tabelas e imagens são chamados no texto?
 - [ ] Referência bibliográfica?
-
-
