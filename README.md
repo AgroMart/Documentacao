@@ -1,30 +1,33 @@
-# 📲🚗 Carteira Digital de Trânsito
+<h1 align="center">
+  📚 Documentação Oficial — AgroMart
+</h1>
 
-![carteira-digital_transito](docs/assets/4k-cdt.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AgroMart/Documentacao_2025.2/main/public/img/logo.png" alt="AgroMart Logo" width="140"/>
+</p>
 
-## Sobre o Projeto
+---
 
-Este repositório é dedicada à avaliação do aplicativo da [Carteira Digital de Transito](https://play.google.com/store/apps/details?id=br.gov.serpro.cnhe&hl=pt_BR&gl=US) produzido pelo grupo 02 na turma de requisitos de software na Faculdade do Gama da Universidade de Brasília (FGA-UnB) durante o 2º semestre de 2023. O objetivo do projeto é avaliar os requisitos do aplicativo, aplicando os conceitos aprendidos em sala de aula. O aplicativo Carteira Digital de Trânsito (CDT) é uma aplicação oficial do governo que permite guardar, no seu celular, a sua carteira de motorista e o documento do veículo que esteja em seu nome. É uma forma segura de ter seus documentos sempre à mão, com a mesma validade dos documentos impressos. Você pode baixar o CDT nas lojas de aplicativos e fazer o cadastro para cada um dos documentos de trânsito.
+## 📖 Sobre o AgroMart
 
-### Colaboradores
+O **AgroMart** é um projeto voltado para fortalecer a **agricultura familiar**, aproximando agricultores de consumidores através de soluções digitais acessíveis.  
+Seu propósito é garantir que alimentos frescos, saudáveis e de qualidade cheguem às pessoas, ao mesmo tempo em que assegura **maior visibilidade e escoamento justo da produção** dos agricultores.  
 
-| <img src="https://github.com/arthurrochamoreira.png" width="100px" style="border-radius: 50%;"> | <img src="https://github.com/brenob6.png" width="100px" style="border-radius: 50%;"> | <img src="https://github.com/LimirioGuimaraes.png" width="100px" style="border-radius: 50%;"> | <img src="https://github.com/LuisMiranda10.png" width="100px" style="border-radius: 50%;"> | <img src="https://github.com/Mayara-tech.png" width="100px" style="border-radius: 50%;"> | <img src="https://github.com/MilenaBaruc.png" width="100px" style="border-radius: 50%;"> | <img src="https://github.com/yabamiah.png" width="100px" style="border-radius: 50%;"> |
-|:----------------------------------------------------------:|:------------------------------------------------:|:-------------------------------------------------------------:|:----------------------------------------------------:|:----------------------------------------------------:|:----------------------------------------------------:|:----------------------------------------------------:|
-| [Altino Arthur](https://github.com/arthurrochamoreira)     | [Breno Queiroz](https://github.com/brenob6)      | [Limirio Guimarães](https://github.com/LimirioGuimaraes)      | [Luis Eduardo](https://github.com/LuisMiranda10)     | [Mayara Alves](https://github.com/Mayara-tech)      | [Milena Baruc](https://github.com/MilenaBaruc)      | [Vinicius Mendes](https://github.com/yabamiah)      |
+Essa iniciativa busca promover uma **economia mais solidária e sustentável**, criando uma rede de confiança entre produtores e consumidores.
 
-## Estrutura do Repositório
+---
 
-* `docs/` - Documentação das análises e estudos realizados.
-* `assets/` - Imagens e outros recursos utilizados na documentação.
+## 🌐 Esta Documentação
 
-## Licença
+Esta é a **documentação oficial** do AgroMart.  
+Ela servirá como **base de referência para o desenvolvimento** e a evolução das duas principais frentes do projeto:
 
-Este projeto é distribuído sob a licença MIT.
+- **AgroMart Web** → plataforma administrativa para agricultores gerenciarem lojas, produtos e informações.  
+- **AgroMart Mobile** → aplicativo multiplataforma que conecta consumidores a agricultores de forma prática e transparente.  
 
-## Contato
+---
 
-Para entrar em contato conosco, por favor, abra uma issue neste repositório ou envie um email para um dos colaboradores listados acima.
-
-
-
+<p align="center">
+  ✨ Esta documentação é a espinha dorsal do AgroMart, orientando o planejamento, desenvolvimento e manutenção contínua do projeto. ✨
+</p>
 
