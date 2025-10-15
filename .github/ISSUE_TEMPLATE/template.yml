@@ -1,0 +1,39 @@
+name: Template - Bug, Feature ou Documentação
+description: Use este template para qualquer tipo de contribuição
+title: "[ISSUE] - "
+labels: []
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de Issue
+      description: Escolha o tipo principal desta issue
+      options:
+        - Bug
+        - Nova Funcionalidade
+        - Atualização de Documentação
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: Descreva claramente o problema, a funcionalidade ou a mudança necessária.
+      placeholder: "O que precisa ser atualizado, corrigido ou desenvolvido"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detalhes
+    attributes:
+      label: Detalhes Técnicos (opcional)
+      description: Informe detalhes adicionais, contexto ou dependências.
+      placeholder: "Ex: tecnologias envolvidas, módulos afetados, etc."
+
+  - type: input
+    id: issue_link
+    attributes:
+      label: Conecte a Issue ou PR relacionada
+      description: Use 'Closes AgroMart/Documentacao#1' para vincular e manter a rastreabilidade entre issues e PRs com o número da issue.
+      placeholder: "Closes AgroMart/Documentacao#1"
