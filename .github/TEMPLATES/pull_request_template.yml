@@ -1,0 +1,36 @@
+## Tipo da Mudança
+
+Selecione uma ou mais opções que descrevem este Pull Request:
+
+- [ ] Resolve Bug
+- [ ] Adiciona nova funcionalidade
+- [ ] Atualiza documentação
+
+---
+
+## Descrição das Mudanças
+
+Explique de forma objetiva o que foi alterado, corrigido ou adicionado neste PR.  
+Inclua contexto técnico se necessário (ex: arquivos modificados, módulos afetados, dependências, etc).
+
+---
+
+## Conecte a Issue
+
+Conecte este Pull Request ao número da issue correspondente no repositório de Documentacao:
+
+> Exemplo:
+> ```markdown
+> Closes Agromart/docs#1
+> ```
+
+## Checklist
+
+- [ ] Código testado e revisado
+- [ ] CI passou com sucesso
+- [ ] Documentação atualizada (se aplicável)
+- [ ] Issue vinculada corretamente (`Closes Agromart/Documentacao#<NumeroIssue>`)
+
+---
+
+> 💡 **Dica:** ao usar `Closes org/docs#N`, o GitHub fecha automaticamente a issue correspondente no repositório de documentação assim que o PR for mergeado.
