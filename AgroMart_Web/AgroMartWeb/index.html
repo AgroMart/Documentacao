@@ -1,0 +1,922 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../AgroMart_Mobile/padrao/">
+      
+      
+        <link rel="next" href="../arquitetura/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Conheça o AgroMart Web - AgroMart</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#agromart-web" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="AgroMart" class="md-header__button md-logo" aria-label="AgroMart" data-md-component="logo">
+      
+  <img src="../../assets/Logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AgroMart
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conheça o AgroMart Web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="lime"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="lime"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AgroMart" class="md-nav__button md-logo" aria-label="AgroMart" data-md-component="logo">
+      
+  <img src="../../assets/Logo.png" alt="logo">
+
+    </a>
+    AgroMart
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AgroMart Mobile
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            AgroMart Mobile
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/AgroMartMobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/guiaUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de instalação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/planejamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/padrao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Padrões de Desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AgroMart Web
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AgroMart Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart Web
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart Web
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-desenvolvimentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximos Desenvolvimentos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack-tecnologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Tecnológica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-navegar-nesta-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como Navegar Nesta Documentação
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura Web
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guiaUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de instalação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../padrao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Padrões de Desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de contribuição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../processo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximos-desenvolvimentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Próximos Desenvolvimentos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack-tecnologica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Tecnológica
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-navegar-nesta-documentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como Navegar Nesta Documentação
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="agromart-web">AgroMart Web</h1>
+<p>O <strong>AgroMart Web</strong> foi concebido como a <strong>plataforma administrativa do agricultor</strong> dentro do ecossistema AgroMart.Diferentemente do aplicativo mobile, que concentra a interação com os consumidores, o sistema Web tem como finalidade organizar e centralizar a gestão das informações do produtor, oferecendo um ambiente simples e eficiente para o controle das CSAs e dos produtos.</p>
+<p>Mais do que apenas um painel de cadastro, o AgroMart Web busca proporcionar ao agricultor um espaço unificado de gestão, no qual ele possa atualizar dados de sua loja, cadastrar novos produtos, ajustar preços, inserir descrições e manter fotos atualizadas.<br />
+Essa centralização facilita o dia a dia do produtor, reduz a duplicidade de informações e garante que os consumidores, ao acessarem o aplicativo mobile, encontrem sempre dados corretos e confiáveis.</p>
+<p>O objetivo também envolve atender às especificidades da agricultura familiar, oferecendo uma ferramenta acessível, leve e prática, que possa ser utilizada por produtores com diferentes níveis de familiaridade com a tecnologia.Nesse sentido, o AgroMart Web foi planejado para reduzir barreiras digitais, permitindo que a gestão de uma CSA seja feita de forma mais organizada e eficiente.</p>
+<p>Em síntese, o AgroMart Web existe para concentrar a administração das informações do produtor em um só lugar, garantindo consistência entre os diferentes canais do ecossistema AgroMart e fortalecendo a atuação do agricultor no ambiente digital.</p>
+<hr />
+<h2 id="objetivo">Objetivo</h2>
+<p>O objetivo principal do <strong>AgroMart Web</strong> é disponibilizar ao agricultor um painel de gestão digital capaz de:</p>
+<ul>
+<li>Registrar e atualizar dados da loja ou ponto de venda;  </li>
+<li>Cadastrar produtos com informações completas (nome, descrição, preço, imagens e categorias);  </li>
+<li>Gerenciar alterações de forma autônoma;  </li>
+<li>Assegurar que todas as informações fiquem sincronizadas com o aplicativo mobile, garantindo consistência entre as plataformas.  </li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Importante</p>
+<p>O AgroMart Web é voltado exclusivamente aos produtores e não ao consumidor final.<br />
+Sua função é oferecer um ambiente administrativo confiável para o gerenciamento de dados.</p>
+</div>
+<hr />
+<h2 id="funcionalidades">Funcionalidades</h2>
+<p>O <strong>AgroMart Web</strong> já se encontra em funcionamento e oferece aos produtores um conjunto de funcionalidades administrativas que permitem gerenciar suas operações de forma prática e centralizada.<br />
+Entre os principais recursos disponíveis estão:</p>
+<ul>
+<li><strong>Cadastro e autenticação de produtores:</strong> sistema de login e registro seguro, garantindo que cada produtor tenha seu próprio acesso administrativo;  </li>
+<li><strong>Gestão de lojas:</strong> possibilidade de criar e atualizar informações da loja ou ponto de venda, incluindo dados gerais, localização e formas de contato;  </li>
+<li><strong>Gerenciamento de produtos:</strong> inclusão de novos itens no catálogo, com suporte a descrição detalhada, preço, imagens e categorias, além da edição de informações já cadastradas;  </li>
+<li><strong>Integração direta com o AgroMart Mobile:</strong> todas as atualizações feitas no Web refletem imediatamente no aplicativo mobile, assegurando que os consumidores encontrem dados corretos e atualizados.  </li>
+</ul>
+<hr />
+<h2 id="proximos-desenvolvimentos">Próximos Desenvolvimentos</h2>
+<p>Mesmo já funcional, o <strong>AgroMart Web</strong> continuará sendo aprimorado para oferecer uma experiência cada vez mais completa ao produtor.<br />
+Entre os pontos planejados estão:</p>
+<ul>
+<li><strong>Aprimoramento da usabilidade:</strong> criação de uma interface mais clara e objetiva, que facilite a compreensão do agricultor no uso diário da plataforma;  </li>
+<li><strong>Camada visual sobre o Strapi:</strong> desenvolvimento de uma capa mais intuitiva sobre o painel administrativo do Strapi, simplificando a navegação e reduzindo a complexidade técnica para o usuário final.  </li>
+</ul>
+<hr />
+<h2 id="stack-tecnologica">Stack Tecnológica</h2>
+<p>A plataforma Web adota tecnologias modernas que permitem <strong>escalabilidade e robustez</strong>, alinhadas ao crescimento do projeto:</p>
+<table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Tecnologias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frontend</strong></td>
+<td>Next.js, React e TypeScript</td>
+</tr>
+<tr>
+<td><strong>Backend</strong></td>
+<td>API AgroMart (Strapi)</td>
+</tr>
+<tr>
+<td><strong>Banco de Dados</strong></td>
+<td>Relacional, gerenciado pela API</td>
+</tr>
+<tr>
+<td><strong>Integrações Previstas</strong></td>
+<td>Geolocalização, upload otimizado de imagens e meios de pagamento</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Observação</p>
+<p>Embora o <strong>Strapi</strong> não seja naturalmente intuitivo para usuários sem familiaridade técnica, o AgroMart Web foi planejado para oferecer uma camada de interface mais clara e organizada, tornando a experiência de gestão mais simples, acessível e adequada à realidade do agricultor.</p>
+</div>
+<hr />
+<h2 id="como-navegar-nesta-documentacao">Como Navegar Nesta Documentação</h2>
+<p>Esta seção da documentação do <strong>AgroMart Web</strong> está organizada para facilitar a compreensão do projeto e do sistema.<br />
+Recomenda-se seguir a leitura na seguinte ordem:</p>
+<ol>
+<li><strong>Planejamento</strong> → apresenta como foram definidos os requisitos, funcionalidades atuais e próximos desenvolvimentos;  </li>
+<li><strong>Arquitetura</strong> → descreve a estrutura técnica, tecnologias utilizadas e comunicação com a API;  </li>
+<li><strong>Guia de Instalação</strong> → explica os requisitos e o passo a passo para executar o sistema localmente;  </li>
+<li><strong>Padrões de Desenvolvimento</strong> → define convenções adotadas no código, versionamento e boas práticas;  </li>
+<li><strong>Contribuição</strong> → orienta como participar do projeto, abrir issues ou enviar pull requests.  </li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      🌱 Projeto AgroMart 2025.2
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

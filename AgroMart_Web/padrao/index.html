@@ -1,0 +1,1038 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../planejamento/">
+      
+      
+        <link rel="next" href="../../Contribuicao/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Padrões de Desenvolvimento - AgroMart</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#padroes-de-desenvolvimento-agromart-web" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="AgroMart" class="md-header__button md-logo" aria-label="AgroMart" data-md-component="logo">
+      
+  <img src="../../assets/Logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AgroMart
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Padrões de Desenvolvimento
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="lime"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="lime"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AgroMart" class="md-nav__button md-logo" aria-label="AgroMart" data-md-component="logo">
+      
+  <img src="../../assets/Logo.png" alt="logo">
+
+    </a>
+    AgroMart
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AgroMart Mobile
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            AgroMart Mobile
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/AgroMartMobile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura Mobile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/guiaUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de instalação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/planejamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AgroMart_Mobile/padrao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Padrões de Desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AgroMart Web
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AgroMart Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AgroMartWeb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conheça o AgroMart Web
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Arquitetura Web
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guiaUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de instalação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Padrões de Desenvolvimento
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Padrões de Desenvolvimento
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo de Desenvolvimento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fluxo de Desenvolvimento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-definicao-da-tarefa" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Definição da Tarefa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-criacao-da-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Criação da Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Commits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-testes-locais" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Testes Locais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-obrigatorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras Obrigatórias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-fluxo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de Fluxo Real
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Guia de contribuição
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../processo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Processo de desenvolvimento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fluxo-de-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fluxo de Desenvolvimento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fluxo de Desenvolvimento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-definicao-da-tarefa" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Definição da Tarefa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-criacao-da-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Criação da Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Desenvolvimento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Commits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-testes-locais" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Testes Locais
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-pull-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Pull Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-obrigatorias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regras Obrigatórias
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boas Práticas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-fluxo-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de Fluxo Real
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="padroes-de-desenvolvimento-agromart-web">Padrões de Desenvolvimento — AgroMart Web</h1>
+<p>O <strong>AgroMart Web</strong> é a plataforma administrativa destinada aos produtores, construída em <strong>Next.js</strong> com <strong>TypeScript</strong> e integrada à <strong>AgroMart API (Strapi)</strong>.<br />
+Para manter a <strong>consistência</strong> e <strong>qualidade</strong> do projeto, todo desenvolvimento deve seguir este padrão.</p>
+<hr />
+<h2 id="fluxo-de-desenvolvimento">Fluxo de Desenvolvimento</h2>
+<h3 id="1-definicao-da-tarefa">1. Definição da Tarefa</h3>
+<ul>
+<li>Toda alteração deve partir de uma tarefa definida no <strong>Kanban Board</strong>.  </li>
+<li>A tarefa deve estar associada a um <strong>requisito válido</strong> ou issue aprovada.  </li>
+<li>Sem aprovação prévia, nenhuma implementação deve ser iniciada.  </li>
+</ul>
+<h3 id="2-criacao-da-branch">2. Criação da Branch</h3>
+<ul>
+<li>Crie branches a partir de <code>devel</code>.  </li>
+<li>Padrões de nomenclatura:  </li>
+<li><code>feature/nome-da-feature</code> → novas funcionalidades;  </li>
+<li><code>fix/nome-do-bug</code> → correções;  </li>
+<li><code>docs/nome-da-doc</code> → documentação.  </li>
+</ul>
+<h3 id="3-desenvolvimento">3. Desenvolvimento</h3>
+<ul>
+<li>Seguir boas práticas de <strong>Next.js + React</strong> com <strong>TypeScript</strong>.  </li>
+<li><strong>Componentes reutilizáveis</strong> → <code>src/components</code>;  </li>
+<li><strong>Hooks personalizados</strong> → <code>src/hooks</code>;  </li>
+<li><strong>Integrações com API</strong> → <code>src/services</code> (via <strong>Axios</strong>);  </li>
+<li><strong>Configurações globais</strong> (tema, constantes) → <code>src/config</code>;  </li>
+<li><strong>Estilização</strong> → CSS-in-JS (<strong>styled-components</strong>, <strong>Tailwind</strong>) ou <strong>CSS Modules</strong>;  </li>
+<li><strong>Internacionalização (i18n)</strong> → utilizar para textos, evitando strings fixas em componentes.  </li>
+</ul>
+<h3 id="4-commits">4. Commits</h3>
+<ul>
+<li>Mensagens em <strong>português no gerúndio</strong>.  </li>
+<li>Sempre referenciar a issue ou tarefa:  </li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="o">(</span><span class="c1">#72) Criando dashboard de lojas</span>
+<span class="o">(</span><span class="c1">#81) Ajustando fluxo de autenticação</span>
+</code></pre></div>
+<h3 id="5-testes-locais">5. Testes Locais</h3>
+<ul>
+<li>Rodar <code>npm run dev</code> ou <code>yarn dev</code> e validar em <code>http://localhost:3000</code>.  </li>
+<li>Corrigir <strong>warnings</strong> antes do commit.  </li>
+<li>Testar fluxos principais: <strong>login</strong>, <strong>cadastro de loja</strong>, <strong>cadastro de produto</strong>.  </li>
+</ul>
+<h3 id="6-pull-request">6. Pull Request</h3>
+<ul>
+<li>Criar <strong>PR</strong> para <code>devel</code>, <strong>nunca direto em <code>master</code></strong>.  </li>
+<li>O PR deve conter:</li>
+<li>Descrição clara da mudança;  </li>
+<li>Prints (ou vídeos) de telas alteradas/adicionadas;  </li>
+<li>Referência ao número da issue/tarefa.  </li>
+<li>É necessária <strong>pelo menos 1 aprovação</strong> antes do merge.  </li>
+</ul>
+<hr />
+<h2 id="regras-obrigatorias">Regras Obrigatórias</h2>
+<div class="admonition warning">
+<p class="admonition-title">Obrigatório</p>
+<p>Não desenvolver sem tarefa definida no <strong>Kanban Board</strong>.<br />
+Cada <strong>PR</strong> deve conter apenas <strong>uma alteração específica</strong>.<br />
+Seguir as instruções do <strong>Guia de Contribuição</strong>.<br />
+Respeitar a política de <strong>commits</strong> e <strong>branches</strong>.</p>
+</div>
+<hr />
+<h2 id="boas-praticas">Boas Práticas</h2>
+<ul>
+<li>Prefira <strong>componentes pequenos, desacoplados e reutilizáveis</strong>.  </li>
+<li>Utilize <strong>TypeScript</strong> com <strong>tipagem estrita</strong> para evitar erros em tempo de execução.  </li>
+<li>Centralize <strong>requisições HTTP</strong> em <code>src/services</code>.  </li>
+<li>Documente todas as <strong>variáveis de ambiente</strong> em <code>.env.local</code>.  </li>
+<li>Evite duplicação de código — use <strong>hooks</strong> ou <strong>utils</strong> para lógica repetida.  </li>
+<li>Mantenha <strong>consistência visual</strong> com o tema global do projeto.  </li>
+<li>Atualize a documentação sempre que houver impacto em funcionalidades.  </li>
+</ul>
+<hr />
+<h2 id="exemplo-de-fluxo-real">Exemplo de Fluxo Real</h2>
+<ol>
+<li>Tarefa criada no Kanban: <em>“Implementar página de relatórios”</em> (#88).  </li>
+<li>Criação da branch:<br />
+ <div class="highlight"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>feature/pagina-relatorios
+</code></pre></div></li>
+<li>
+<p>Desenvolvimento em src/pages/reports/index.tsx e componentes auxiliares em src/components/Reports/.</p>
+</li>
+<li>
+<p>Commit:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;(#88) Criando página de relatórios&quot;</span>
+</code></pre></div>
+<ol>
+<li>
+<p>PR aberto para devel, revisado e aprovado.</p>
+</li>
+<li>
+<p>Merge realizado conforme as regras.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      🌱 Projeto AgroMart 2025.2
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
