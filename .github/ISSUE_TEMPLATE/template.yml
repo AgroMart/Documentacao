@@ -1,5 +1,5 @@
 name: Template - Bug, Feature ou Documentação
-description: Use este template para qualquer tipo de contribuição
+description: Use este template para qualquer tipo de contribuição (bug, nova funcionalidade ou atualização de documentação)
 title: "[ISSUE] - "
 labels: []
 body:
@@ -19,12 +19,12 @@ body:
     id: descricao
     attributes:
       label: Descrição
-      description: Descreva o problema, a funcionalidade ou a mudança necessária. Não esquec
-      placeholder: "O que precisa ser atualizado, corrigido ou desenvolvido"
+      description: Descreva o problema, a funcionalidade ou a mudança necessária. Não esqueça de incluir o contexto e os objetivos da tarefa.
+      placeholder: "O que precisa ser atualizado, corrigido ou desenvolvido?"
     validations:
       required: true
 
-   - type: checkboxes
+  - type: checkboxes
     id: modulos
     attributes:
       label: Repositórios afetados
@@ -41,5 +41,6 @@ body:
     id: detalhes
     attributes:
       label: Detalhes Técnicos (opcional)
-      description: Informe detalhes adicionais, contexto ou dependências afim de deixar a tarefa pronta para desenvolvimento.
-      placeholder: "Ex: tecnologias envolvidas, módulos afetados, etc."
+      description: Informe detalhes adicionais, contexto ou dependências, afim de deixar a tarefa pronta para desenvolvimento (DoR).
+      placeholder: "Ex: tecnologias envolvidas, endpoints, módulos afetados, dependências, etc."
+
